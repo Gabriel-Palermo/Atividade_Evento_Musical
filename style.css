@@ -1,0 +1,219 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #492c06, #963610);
+    color: white;
+
+}
+
+/* Cria um layout flexível para alinhar a frase e a data lado a lado */
+.anos90-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Centraliza na tela */
+    gap: 20px; /* Espaço entre o texto e a data */
+    flex-wrap: wrap; /* Quebra para nova linha em telas menores */
+    margin-bottom: 30px;
+}
+
+/* Estiliza o subtítulo anos90 */
+.anos90 {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.datas-container {
+    display: flex;
+    flex-direction: column; /* Faz os spans ficarem um abaixo do outro */
+    align-items: center; /* Centraliza os spans */
+    gap: 5px; /* Dá um espaçamento entre eles */
+}
+
+/* Estiliza a data do show */
+.data-show {
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: rgb(145, 255, 0);
+}
+
+.ingressos-show {
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: rgb(255, 251, 0);
+}
+
+button {
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #ff9100;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e07c00;
+}
+
+.img-principal {
+    margin-top: 20px; /* Adiciona um espaço abaixo da imagem */
+    margin-bottom: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Adiciona bordas e sombras nas imagens e vídeos */
+img, iframe, video {
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Adiciona um estilo especial para as imagens da galeria */
+.gallery img {
+    border: 3px solid white;
+    margin: 10px;
+}
+img {
+    width: 80%;
+    max-width: 600px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery img {
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+}
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.video {
+    flex: 1;
+    min-width: 300px;
+    max-width: 550px
+}
+.video iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px; /* Adiciona espaço interno */
+    text-align: center; /* Centraliza o <h3> */
+}
+.info h3 {
+    text-align: center; /* Centraliza o título */
+    font-size: 25px;
+}
+.info ul {
+    text-align: left; /* Alinha a lista à esquerda */
+    padding-left: 20px; /* Adiciona espaço à esquerda da lista */
+    font-size: 20px;
+}
+.tabelas-container {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos */
+    gap: 50px; /* Espaço entre as tabelas */
+    flex-wrap: wrap; /* Permite quebrar para nova linha em telas pequenas */
+    margin: 20px 0;
+}
+.tabela {
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px; /* Define um tamanho máximo */
+    border: 3px solid white;
+}
+th, td {
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    color: white; /* Mantém o texto branco */
+}
+
+/* Estiliza o formulário */
+#formulario {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espaço entre os dois blocos */
+    flex-wrap: wrap; /* Para quebrar em telas pequenas */
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Deixa os campos de texto um abaixo do outro */
+.dados-pessoais, .tipo-ingresso {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+/* Ajuste para os checkboxes e radio buttons */
+.tipo-ingresso label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

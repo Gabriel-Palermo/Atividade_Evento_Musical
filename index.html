@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <h1>Inscrições para o show do Leandro & Leonardo</h1>
+    
+    <div class="anos90-container">
+        <p class="anos90">"Leandro & Leonardo é uma dupla brasileira de música sertaneja formada pelos irmãos Leandro e Leonardo. Os irmãos goianos formaram a dupla em 1983, a qual mais de venderam 17 milhões de discos."</p>
+        <div class="datas-container">
+            <span class="data-show">O Evento acontecerá no dia 16 de Março de 2025</span>
+            <span class="ingressos-show">Ingressos estarão à venda até dia 14 de Março</span>
+        </div>
+    </div>    
+    
+    <button onclick="location.href='#formulario'">Adquira o seu Ingresso</button>
+    <img src="Leandro & Leonardo.jpg" alt="imagem1" class="img-principal">
+
+    <h2>Detalhes do Show</h2>
+    <div class="info-container">
+        <div>
+            <video controls class="video">
+                <source src="Show.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="info">
+            <h3>Especificações:</h3>
+            <ul>
+                <li>Leandro & Leonardo, nascidos em Goianápolis, Goiás, alcançaram um dos maiores feitos de sua carreira em 1990, quando o álbum que leva seu nome superou a marca de 3 milhões de cópias.</li>
+                <p> </p>
+                <li>Em 1983, os irmãos Leandro (Luis José) e Leonardo formaram a dupla sertaneja que conquistaria o Brasil, trazendo um estilo único ao cenário musical.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Galeria de Imagens</h2>
+    <div class="gallery">
+        <img src="Leandro & Leonardo 3.jpg" alt="1">
+        <img src="Leandro & Leonardo 2.jpg" alt="2">
+        <img src="Leandro & Leonardo 4.jpg" alt="3">
+    </div>
+
+    <h2>Músicas</h2>
+    <audio controls>
+        <source src="Horizonte azul.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="Desculpe, mas eu vou chorar.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="Pense em mim.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="Índia - Índia.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="Rumo á Goiânia.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="Solidão Por Perto.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="Sonho por sonho.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="Talismã.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>Informações sobre o Evento</h2>
+
+    <div class="tabelas-container">
+        <div class="tabela">
+            <h3>Ingressos</h3>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th> Espaços </th>
+                        <th> Valores +16 </th>
+                        <th> Valores -16 </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Camarote </td>
+                        <td> R$450,00 </td>
+                        <td> R$390,00 </td>
+                    </tr>
+                    <tr>
+                        <td> Vip </td>
+                        <td> R$380,00 </td>
+                        <td> R$340,00 </td>
+                    </tr>
+                    <tr>
+                        <td> Pista </td>
+                        <td> R$290,00 </td>
+                        <td> R$250,00 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="tabela">
+            <h3>Evento 16/03</h3>
+            <table border="3">
+                <thead>
+                    <tr>
+                        <th> Horário </th>
+                        <th> Atração </th>
+                        <th> Palco </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 20:00 </td>
+                        <td> Abertura do Evento </td>
+                        <td> Palco Principal </td>
+                    </tr>
+                    <tr>
+                        <td> 21:00 </td>
+                        <td> Apresentação Musical </td>
+                        <td> Palco Secundário </td>
+                    </tr>
+                    <tr>
+                        <td> 22:00 </td>
+                        <td> Show Principal </td>
+                        <td> Palco Principal </td>
+                    </tr>
+                    <tr>
+                        <td> 00:00 </td>
+                        <td> Encerramento </td>
+                        <td> Palco Principal </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <h2>Formulário</h2>
+    <form id="formulario">
+        <div class="dados-pessoais">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone">
+        </div>
+    
+        <div class="tipo-ingresso">
+            <h4>Tipo de Ingresso</h4>
+            
+            <label for="number">Ingresso(s):</label>
+            <input type="number" id="number">
+            
+            <label>
+                <input type="radio" name="ingresso" value="camarote"> Camarote
+            </label>
+            <label>
+                <input type="radio" name="ingresso" value="vip"> Vip
+            </label>
+            <label>
+                <input type="radio" name="ingresso" value="pista"> Pista
+            </label>
+            
+            <label>
+                <input type="checkbox" name="notificação" value="email"> Receber notificações por e-mail
+            </label>
+        </div>
+    
+        <button type="submit">Enviar Formulário</button>
+    </form>
+    
+</body>
+</html>
